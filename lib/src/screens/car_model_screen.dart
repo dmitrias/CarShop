@@ -119,6 +119,11 @@ class _CarModelScreenState extends State<CarModelScreen> {
               height: 30,
             ),
 
+            Container(
+              alignment: Alignment.center,
+              child: Text(car.seller.phones.first, style: TextStyle(color: Colors.black.withOpacity(1), fontSize: 24),),
+            ),
+
             InkWell(
               onTap: () {
                 BookmarkModel bookmark = BookmarkModel(
